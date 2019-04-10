@@ -61,7 +61,7 @@ class roundrobin {
 								z = z + r2[i]; 
 
 								// store comp time 
-								comp[i] = z - a[i]; 
+								comp[i] = z - a1[i]; 
 
 								// store wait time 
 								w[i] = z - b[i] - a1[i]; 
@@ -87,7 +87,7 @@ class roundrobin {
 									flag = false; 
 									if (r2[j] > n)
 									 { 
-										t = t + n; 
+										z = z + n; 
 										r2[j] = r2[j] - n; 
 										r1[j] = r1[j] + n; 
 										seq += "->" + pr[j]; 
